@@ -1,0 +1,21 @@
+{
+	"index.html": {
+		"resources": [
+			"music/李玉刚 - 刚好遇见你.mp3",
+			"swiper/swiper-3.3.1.min.js",
+			"swiper/swiper-3.3.1.min.css",
+			"swiper/swiper.animate1.0.2.min.js",
+			"js/jquery-1.11.0.min.js",
+			"css/swiper.css",
+			"js/swiper.js",
+			"swiper/animate.min.css",
+			"img/t01cd9474d769e9c32c.jpg",
+			"img/t0144408e0d4b4c2b3c.jpg",
+			"img/audio1.png",
+			"img/Redocn_2012040712031682.jpg",
+			"font_h4wlfdhsghrxjemi/iconfont.css",
+			"img/audio2.png",
+			"music/aa.mp3"
+		]
+	}
+}

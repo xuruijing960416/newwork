@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/swiper.css"/>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="font_h4wlfdhsghrxjemi/iconfont.css" />
+    
+    
+    <script type="text/javascript" src="js/swiper.js"></script>
+    <script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+    <script type="text/javascript" src="js/swiper-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+	<div class="audio">
+		<img src="img/audio1.png" class="imga" />
+		<audio src="music/aa.mp3" autoplay="autoplay" loop="loop"></audio>
+	</div>
+	<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        	<p class="love">love you</br>
+        	   有</br>你</br>世</br>界</br>如</br>此</br>美</br>好
+        	</p>
+        	<p class="xin">&hearts;</p>
+        	<div class="div1">
+        	</div>
+        	<img src="img/Redocn_2012040712031682.jpg"/>
+        	<p class="dibu">
+        		找一人</br>
+        		相伴到老</p>
+        </div>
+        <div class="swiper-slide">
+        	<div class="ani1">
+        		<span style="color: #0086B3; font-size: 1rem;">&lowast;</span>
+        	   <p class="ani ai" swiper-animate-effect="swing" swiper-animate-duration="1s" swiper-animate-delay="0.3s">有一个自己的小屋</p>
+        	<span style="color: #0086B3; font-size: 1rem;">&lowast;</span>
+        	<p class="xuehua">&lowast;</p>
+        	</div>
+        	<img src="img/t0144408e0d4b4c2b3c.jpg"/>
+        	<div class="xuehua1">
+        		<p class="ani ni" swiper-animate-effect="bounceInDown" swiper-animate-duration="10s" swiper-animate-delay="0.5s">&lowast;*</p>
+        		<p class="ani ni2" swiper-animate-effect="bounceInDown" swiper-animate-duration="10s" swiper-animate-delay="1.5s">&lowast;</p>
+        		
+        	</div>
+        </div>
+        <div class="swiper-slide">
+        	<div class="aa">
+        		<p class="ani" swiper-animate-effect="rubberBand" swiper-animate-duration="1s" swiper-animate-delay="1s">&clubs;</p>
+        			<p class="ani a3" swiper-animate-effect="flip" swiper-animate-duration="2s" swiper-animate-delay="1s">Home</p>
+        			<p class="ani a3" swiper-animate-effect="flip" swiper-animate-duration="2s" swiper-animate-delay="1s"><img src="img/t0170958fe033141d55.jpg"/></p>
+        		<span class="aa">一起看花开花落</span>
+        	</div>
+        	<img src="img/t01cd9474d769e9c32c.jpg"/>
+        </div>
+        
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+</div>
+
+ <script type="text/javascript" src="swiper/swiper-3.3.1.min.js"></script>
+<script type="text/javascript">        
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical',
+    loop: true,
+    
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    
+	    onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+	    swiperAnimateCache(swiper); //隐藏动画元素 
+	    swiperAnimate(swiper); //初始化完成开始动画
+	   }, 
+	    onSlideChangeEnd: function(swiper){ 
+	    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+	   } 
+ })    
+   $(".audio").click(function(){
+        //animationPlayState   
+        if($(".audio").css("animationPlayState") == "running"){
+            $(this).css('animationPlayState', 'paused');
+            $(".imga").attr("src","img/audio2.png")
+            $("audio")[0].pause();
+        }else{
+            $(this).css('animationPlayState', 'running');
+            $(".imga").at5tr("src","img/audio1.png")
+            $("audio")[0].play();
+        }
+    })
+   var xue = $("<p class='ani kelong' swiper-animate-effect='bounceInDown' swiper-animate-duration='10s' swiper-animate-delay='2s'>&lowast;</p>")
+   $(".xuehua1").append(xue);
+   $('body').one('touchstart',function(){
+				$("audio")[0].play();
+			}); 
+  </script>
+</body>
+</html>
